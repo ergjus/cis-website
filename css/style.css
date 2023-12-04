@@ -34,7 +34,10 @@ a {
 body {
   background-color: var(--secondary-offwhite);
 }
-
+.active-link {
+  transform: scale(1.05);
+  border-bottom: 2px solid var(--teal);
+}
 .primary-header {
   display: flex;
   align-items: center;

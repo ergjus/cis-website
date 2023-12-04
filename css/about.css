@@ -29,13 +29,3 @@ a {
   text-decoration: none;
   font-weight: 600;
 }
-
-.primary-nav a[data-visible="true"] {
-  transform: scale(1.05);
-  border-bottom: 2px solid var(--teal);
-}
-
-.active-link {
-  transform: scale(1.05);
-  border-bottom: 2px solid var(--teal);
-}
