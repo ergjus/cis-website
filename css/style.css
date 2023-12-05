@@ -555,4 +555,8 @@ section {
     font-size: small;
     text-align: left;
   }
+
+  .trials-selections {
+    margin-bottom: 60px;
+  }
 }
