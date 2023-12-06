@@ -38,6 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
       box.querySelector(".fa-check").setAttribute("data-visible", "true");
     });
   });
+
+  const sendFormBtn = document.querySelector(".submit-btn");
+  const resubmitFormBtn = document.querySelector(".resubmit-btn");
+
+  const thankYouForm = document.querySelector(".thankyou-form");
+  const form = document.querySelector(".form");
+
+  sendFormBtn.addEventListener("click", () => {
+    thankYouForm.setAttribute("data-visible", true);
+    form.setAttribute("data-visible", false);
+    console.log("Attributes => " + form.getAttribute("data-visible"));
+  });
+  resubmitFormBtn.addEventListener("click", () => {
+    thankYouForm.setAttribute("data-visible", false);
+    form.setAttribute("data-visible", true);
+  });
 });
 
 /*

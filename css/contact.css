@@ -1,5 +1,12 @@
 @import "/css/style.css";
 
+h2,
+a,
+p {
+  font-family: var(--main-font);
+  color: var(--teal);
+}
+
 .active-link {
   transform: scale(1.05);
   border-bottom: 2px solid var(--teal);
@@ -9,12 +16,116 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.form-image {
+  flex: 1;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-image img {
+  width: 320px;
+  height: auto;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  flex: 2;
+  position: relative;
 }
 
 form {
-  width: 700px;
-  height: 500px;
+  width: 80%;
+  height: 450px;
   background-color: var(--secondary-offwhite);
-  border: 2px solid red;
   border-radius: 20px;
+  padding: 20px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.text-input {
+  background-color: var(--secondary-offwhite);
+  border: 1.5px solid var(--teal);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.text-input.message {
+  text-align: left;
+  height: 200px;
+}
+
+.text-input:focus {
+  outline: none;
+  border: 1.5px solid var(--primary-coral);
+}
+
+input,
+select,
+textarea {
+  color: var(--teal);
+}
+
+.input-container {
+  border: 1px solid red;
+  width: auto;
+  height: auto;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button button {
+  border: none;
+  padding: 10px 30px;
+  background-color: var(--teal);
+  font-family: var(--main-font);
+  font-weight: 700;
+  color: var(--secondary-offwhite);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background-color: var(--primary-cyan);
+}
+
+.thankyou-form {
+  flex: 1;
+  display: flex;
+  color: var(--secondary-offwhite);
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.thankyou-form p {
+  font-weight: 600;
+  color: var(--secondary-offwhite);
+}
+
+.thankyou-form[data-visible="false"] {
+  display: none;
+}
+
+form[data-visible="false"] {
+  display: none;
 }

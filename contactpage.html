@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="icon" href="images/favicon.svg" />
     <script type="text/javascript" src="js/aboutus.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1416523cca.js"
+      crossorigin="anonymous"></script>
     <title>MindfulMe - Contact Page</title>
   </head>
   <body>
@@ -41,9 +44,93 @@
     </header>
 
     <section class="form-section">
-      <form>
-        <input type="text" id="input-name" placeholder="Name" />
-      </form>
+      <div class="form-image">
+        <img src="images/email.png" alt="" />
+      </div>
+      <div class="form-container">
+        <div class="thankyou-form" data-visible="false">
+          <h2>Thank you for contacting us!</h2>
+          <p>
+            We have received your form and will reach out as soon as possible!
+          </p>
+          <div class="button">
+            <button class="resubmit-btn">Send another message</button>
+          </div>
+        </div>
+        <form class="form" data-visible="true">
+          <div class="form-title">
+            <h2>Contact Us</h2>
+          </div>
+          <input
+            class="text-input"
+            type="text"
+            id="input-name"
+            placeholder="Name"
+            required />
+
+          <input
+            class="text-input"
+            type=""
+            id="input-name"
+            placeholder="Phone" />
+
+          <input
+            class="text-input"
+            type="text"
+            id="input-name"
+            placeholder="Address" />
+
+          <input
+            class="text-input"
+            type="email"
+            id="input-name"
+            placeholder="example@email.com" />
+
+          <input
+            class="text-input message"
+            type="text"
+            id="input-name"
+            placeholder="Message" />
+
+          <div class="button">
+            <button class="submit-btn">Send</button>
+          </div>
+        </form>
+      </div>
     </section>
+    <div class="footer">
+      <div class="socials">
+        <a href="https://github.com/ergjus" target="_blank"
+          ><i class="fa-brands fa-square-github fa-xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ergjus-alipaj-069266217/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://www.instagram.com/erialipaj/" target="_blank"
+          ><i class="fa-brands fa-square-instagram fa-xl"></i
+        ></a>
+      </div>
+      <div>
+        <ul class="footer-pages">
+          <li>
+            <a href="/aboutus.html" target="_blank">About Us</a>
+          </li>
+          <li>
+            <a href="#meditation">Meditation</a>
+          </li>
+          <li>
+            <a href="#workout">Workout</a>
+          </li>
+          <li>
+            <a href="/contactpage.html" target="_blank">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>MindfulMe by Ergjus Alipaj @ 2023</p>
+      </div>
+    </div>
   </body>
 </html>
