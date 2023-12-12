@@ -1,0 +1,52 @@
+@import "/css/style.css";
+
+h1,
+h2,
+p,
+h3 {
+  font-family: var(--main-font);
+}
+
+.workout-hero {
+  min-height: 600px;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--teal);
+  color: var(--secondary-offwhite);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.workout-hero-text {
+  margin: 5%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+.workout-hero-text p {
+  color: var(--secondary-cyan);
+}
+
+.workout-hero-text h3 {
+  color: var(--secondary-offwhite);
+}
+
+.workout-hero-img {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workout-hero-img img {
+  width: 400px;
+  height: auto;
+}

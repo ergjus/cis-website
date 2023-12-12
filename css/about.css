@@ -44,7 +44,7 @@ a {
 .about-hero-text {
   flex: 1;
   color: var(--secondary-offwhite);
-  font-size: 45px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
