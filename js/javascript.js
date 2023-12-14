@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // VALIDATING FORM AND SHOWING THANK YOU SCREEN
+  // VALIDATING FORM AND SHOWING THANK YOU  SCREEN
 
   const sendFormBtn = document.querySelector(".submit-btn");
   const resubmitFormBtn = document.querySelector(".resubmit-btn");
