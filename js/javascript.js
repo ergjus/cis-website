@@ -39,20 +39,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // VALIDATING FORM AND SHOWING THANK YOU SCREEN
+
   const sendFormBtn = document.querySelector(".submit-btn");
   const resubmitFormBtn = document.querySelector(".resubmit-btn");
 
   const thankYouForm = document.querySelector(".thankyou-form");
   const form = document.querySelector(".form");
 
-  sendFormBtn.addEventListener("click", () => {
-    thankYouForm.setAttribute("data-visible", true);
-    form.setAttribute("data-visible", false);
-    console.log("Attributes => " + form.getAttribute("data-visible"));
-  });
   resubmitFormBtn.addEventListener("click", () => {
     thankYouForm.setAttribute("data-visible", false);
     form.setAttribute("data-visible", true);
+  });
+
+  document.querySelector(".form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    var isValid = true;
+    var name = document.getElementById("input-name").value;
+    var phone = document.getElementById("input-phone").value;
+    var email = document.getElementById("input-email").value;
+
+    // Name validation
+    if (name.trim() === "") {
+      alert("Please enter your name.");
+      isValid = false;
+    }
+
+    // Phone number validation (basic example)
+    if (phone.trim() !== "" && !/^\d+$/.test(phone)) {
+      alert("Please enter a valid phone number.");
+      isValid = false;
+    }
+
+    // Email validation
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      alert("Please enter a valid email.");
+      isValid = false;
+    }
+
+    // If all validations pass
+    if (isValid) {
+      thankYouForm.setAttribute("data-visible", true);
+      form.setAttribute("data-visible", false);
+    }
   });
 });
 
